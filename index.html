@@ -1,0 +1,42 @@
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Clicking this button will open the modal -->
+    <button id="modal_opener">Submit Feedback 😛</button>
+
+    <div class="modal" style="display: none">
+      <div class="overlay"></div>
+      <div class="modal_content">
+        <!-- Dynamic Section -->
+      <form onsubmit="submitPost()">
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5" value="5" />
+          <label for="rate-5" class="fa fa-star"></label>
+          <input type="radio" name="rate" id="rate-4" value="4" />
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3" value="3" />
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2" value="2" />
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1" value="1" />
+          <label for="rate-1" class="fas fa-star"></label>
+        </div>
+        <header></header>
+        <div class="textarea">
+          <textarea
+            cols="30"
+            placeholder="Describe your experience.."
+          ></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit">Post</button>
+        </div>
+      </form>
+        <!-- End of Dynamic Section -->
+        <form>
+
+          </form>
+        <button title="Close" class="close_modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
